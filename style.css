@@ -1,0 +1,339 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F3E3B2;
+    display: flex;
+    flex-direction: column;
+    cursor: url('asset/cursor2.png'), auto;
+}
+
+.body-header{
+    background: linear-gradient(180deg, #310F10, #2A1312);
+    width: 100%;
+    height: 780px;
+}
+
+.header{
+    display: flex;
+    top: 10px;
+    justify-content: center;
+    z-index: 999;
+    position: fixed;
+    left: 34%;
+}
+
+.header-ril{
+    background-color: #310F10;
+      background: linear-gradient(
+    to bottom,
+    rgba(29, 4, 4, 0.8) 0%,   
+    rgba(66, 17, 17, 0.4) 70%, 
+    rgba(39, 14, 14, 0) 100%    
+  );
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    z-index: 998;
+}
+
+.opsi{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 13px;
+    padding-right: 1px;
+    gap: 30px;
+    color: #F3E3B2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid #F3E3B2;
+    border-radius: 50px;
+    width: 488px;
+    height: 22px;
+    align-items: center;
+    background-color: #310F10;
+    cursor: url('asset/cursor2.png'), auto;
+}
+
+.border-opsi{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    margin-right: 50px;
+}
+
+.opsi1, .opsi2, .opsi3, .opsi4{
+    font-size: 17px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+}
+
+.hover-header{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.opsi a {
+  text-decoration: none;
+  transition: color 0.1s;
+  color: #F3E3B2;
+}
+
+.opsi a:hover {
+  color: #ffffff;
+}
+
+.fotohanny{
+    display: flex;
+    z-index: 10;
+    width: 550px;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column; 
+    color: #F3E3B2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0px;
+    margin-left: -30px;
+    margin-bottom: -20px;
+}
+
+.hero{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.name{
+    font-family: "great vibes", cursive;
+    font-weight: lighter;
+    margin-bottom: 3px;
+}
+
+.hello{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.hello1{
+    margin-bottom: -20px;
+}
+
+.fullstack{
+    border-bottom: #F3E3B2 2px solid;
+    font-size: 35px;
+}
+
+.paragraf{
+    display: grid;
+    color: #F3E3B2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 24px;
+}
+
+.fs{
+    display: flex;
+    color: #F3E3B2;
+    margin-bottom: -20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-profile{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    line-height: 0px;
+    padding-top: 50px;
+}
+
+.foto-hanny{
+    display: flex;
+}
+
+.medsos{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(90deg, #c2a986, #F3E3B2);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    box-shadow: #000000 10px 10px 10px;
+}
+
+.medsos img{
+    height: 35px;
+    width: 35px;
+    padding-left: 29px;
+    padding-right: 22px;
+    padding-top: 8px;
+}
+
+.project {
+    padding: 390px 20px;
+    background-color: #F3E3B2;
+    height: 1200px;
+}
+
+.project-heading {
+    text-align: center;
+    color: #310F10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card:nth-child(1),
+.project-card:nth-child(3) {
+    margin-right: auto;
+    margin-left: 0;
+    flex-direction: row;
+}
+
+.project-card:nth-child(2),
+.project-card:nth-child(4) {
+    margin-left: auto;
+    margin-right: 0;
+    flex-direction: row-reverse;
+}
+
+.project-card img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-info h3 {
+    color: #310F10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem 0;
+}
+
+.project-info p {
+    color: #666;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Skills Section Styles */
+.skills {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #2A1312, #310F10);
+    position: relative;
+    z-index: 1;
+}
+
+.skills-heading {
+    text-align: center;
+    color: #F3E3B2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    color: #F3E3B2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.skill-percent {
+    color: #F3E3B2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.skill-bar {
+    background-color: rgba(243, 227, 178, 0.1);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(243, 227, 178, 0.2);
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #F3E3B2, #E0C39A);
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+.paper1{
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.body-bottom{
+    background: linear-gradient(180deg,  #2A1312, #310F10);
+    width: 100%;
+    height: 600px;
+}
